@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja JuicyBear</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header"> 
+      <span>Cadastramento de Produtos - Loja JuicyBear</span>
+      <button onclick="openModal()" id="new">Registrar</button>
+    </div>
+       <div class="divTable">
+      <table>
+        <thead> 
+          <tr> 
+            <th>Produto</th>
+            <th>Código</th>
+            <th>Quantidade</th>
+            <th class="acao">Editar</th>
+            <th class="acao">Excluir</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody> 
+      </table>
+    </div>
+
+    <div class="modal-container">
+      <div class="modal">
+        <form>
+          <label for="m-produto">Produto</label>
+          <input id="m-produto" type="text" required />
+  
+          <label for="m-codigo">Código</label>
+          <input id="m-codigo" type="number" required />
+  
+          <label for="m-quantidade">Quantidade</label>
+          <input id="m-quantidade" type="number" required />
+          <button id="btnSalvar">Salvar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script> 
+</body>
+
+</html>
