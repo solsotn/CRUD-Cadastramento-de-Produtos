@@ -1,4 +1,8 @@
+/*Importação Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+/*Algumas definições*/
 
 * {
   margin: 0;
@@ -7,6 +11,8 @@
   font-family: "Roboto Mono", serif;
   font-optical-sizing: auto;
 }
+
+/*Estilização do body*/
 
 body {
   width: 100vw;
@@ -17,9 +23,13 @@ body {
   background-color: #ffcbdb;
 }
 
+/*Definição do cursor*/
+
 button {
   cursor: pointer;
 }
+
+/*Estilização do Contêiner*/
 
 .container {
   width: 90%;
@@ -27,6 +37,8 @@ button {
   border-radius: 10px;
   background: white;
 }
+
+/*Estilização do Cabeçalho*/
 
 .header {
   min-height: 70px;
@@ -36,11 +48,15 @@ button {
   margin: auto 12px;
 }
 
+/*Estilização do Texto do Cabeçalho*/
+
 .header span {
   font-weight: 900;
   font-size: 20px;
   word-break: break-all;
 }
+
+/*Estilização do Botão de Incluir*/
 
 #new {
   font-size: 16px;
@@ -51,6 +67,8 @@ button {
   background-color: #ffcbdb;
 }
 
+/*Estilização da Tabela*/
+
 .divTable {
   padding: 10px;
   width: auto; 
@@ -58,15 +76,21 @@ button {
   overflow:auto;
 }
 
+/*Fundo da barra de rolagem*/
+
 .divTable::-webkit-scrollbar {
   width: 12px;
   background-color: #cfcfc4;
 }
 
+/*Barra de rolagem*/
+
 .divTable::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.6); 
 }
+
+/* Estilização da Tabela*/
 
 table {
   width: 100%;
@@ -75,19 +99,27 @@ table {
   border-collapse: collapse;
 }
 
+/*Estilização do Cabeçalho da Tabela*/
+
 thead {
   background-color: #ffcbdb;
 }
 
+/*Linhas da tabela*/
+
 tr {
   border-bottom: 1px solid #cfcfc4 !important;
 }
+
+/*Estilização das Células do Corpo da Tabela*/
 
 tbody tr td {
   vertical-align: text-top;
   padding: 6px;
   max-width: 50px;
 }
+
+/*Estilização das Células do Cabeçalho da Tabela*/
 
 thead tr th {
   padding: 5px;
@@ -107,6 +139,8 @@ thead tr th.acao {
 tbody tr td.acao {
   text-align: center;
 }
+
+/*Responsividade*/
 
 @media (max-width: 700px) {
   body {
@@ -143,6 +177,10 @@ tbody tr td.acao {
   }
 }
 
+
+
+/*Estilização do Modal*/
+
 .modal-container {
   width: 100vw;
   height: 100vh;
@@ -155,6 +193,8 @@ tbody tr td.acao {
   align-items: center;
   justify-content: center;
 }
+
+/*Pop-up de registro*/
 
 .modal {
   display: flex;
@@ -182,6 +222,8 @@ tbody tr td.acao {
   border-right: none;
 }
 
+/*Botão de Salvar Pop-up Registro*/
+
 .modal button {
   width: 100%;
   margin: 10px auto;
@@ -194,13 +236,19 @@ tbody tr td.acao {
   color: black;
 }
 
+/*Exibição do Modal*/
+
 .active {
   display: flex;
 }
 
+/*Animação Modal*/
+
 .active .modal {
   animation: modal .4s;
 }
+
+/*Animação Modal*/
 
 @keyframes modal {
   from {
@@ -213,15 +261,20 @@ tbody tr td.acao {
   }
 }
 
+/*Botão de editar e excluir*/
+
 td button {
   border: none;
   outline: none;
   background: transparent;
 }
 
+/*Botão das células*/
 td button i {
   font-size: 25px;
 }
+
+/*Botão das células*/
 
 td button i:first-child {
   margin-right: 10px;
