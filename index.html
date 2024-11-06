@@ -4,38 +4,60 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css"> 
-  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-  <title>Loja JuicyBear</title>
+  <title> Loja JuicyBear </title>
+  <link rel="stylesheet" href="style.css"> <!--Link de integração CSS-->
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'> <!--ícones-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> <!--Fonte Roboto Mono-->
+
 </head>
 
 <body>
+
+  <!--Início do Contêiner-->
+
   <div class="container">
+
+    <!--Cabeçalho-->
+
     <div class="header"> 
       <span>Cadastramento de Produtos - Loja JuicyBear</span>
       <button onclick="openModal()" id="new">Registrar</button>
     </div>
-       <div class="divTable">
+
+    <!--Fim do Cabeçalho-->
+
+    <!--Início da Tabela-->
+
+    <div class="divTable">
       <table>
-        <thead> 
-          <tr> 
+        <thead> <!--Cabeçalho da Tabela-->
+          <tr> <!--Linha do Cabeçalho da Tabela-->
+            <!--Colunas-->
             <th>Produto</th>
             <th>Código</th>
             <th>Quantidade</th>
             <th class="acao">Editar</th>
             <th class="acao">Excluir</th>
+            <!--Fim das Colunas-->
           </tr>
+          <!--Parte onde os dados serão inseridos e exibidos-->
         </thead>
         <tbody>
         </tbody> 
       </table>
     </div>
 
+    <!--Fim da Tabela-->
+
+    <!--Início do Modal-->
+
     <div class="modal-container">
       <div class="modal">
+
+        <!--Início do Cadastro-->
+
         <form>
           <label for="m-produto">Produto</label>
           <input id="m-produto" type="text" required />
@@ -47,10 +69,20 @@
           <input id="m-quantidade" type="number" required />
           <button id="btnSalvar">Salvar</button>
         </form>
+
+        <!--Fim do Cadastro-->
+
       </div>
+
+      <!--Fim do Modal-->
+
     </div>
   </div>
-  <script src="script.js"></script> 
+
+  <!--Fim do Contêiner-->
+  <script src="script.js"></script> <!--Link de integração JS-->
+
 </body>
 
 </html>
+<!--Fim HTML-->
